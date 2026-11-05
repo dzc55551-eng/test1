@@ -1,0 +1,40 @@
+{
+  "repos": [
+    {
+      "owner": "dzc55551-eng",
+      "repo": "test1",
+      "branch": "main",
+      "local_path": ".",
+      "generators": [
+        "heartbeat",
+        "docs_index"
+      ],
+      "active_hours": [
+        0,
+        24
+      ],
+      "max_files": 3,
+      "max_lines": 60,
+      "commit_prefix": "chore: update",
+      "heartbeat": {
+        "path": "data/heartbeat.json",
+        "collections": [
+          {
+            "key": "tracked_files",
+            "glob": "*.md",
+            "exclude": [
+              "README.md"
+            ]
+          }
+        ]
+      },
+      "index": {
+        "section": "目录",
+        "glob": "*.md",
+        "exclude": [
+          "README.md"
+        ]
+      }
+    }
+  ]
+}
